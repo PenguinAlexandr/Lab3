@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout5"
+    style="@style/AppTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <EditText
+        android:id="@+id/firstNameEditText"
+        style="@style/EditTextStyle"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="@string/first_name"
+        android:maxLength="15"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/lastNameEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/lastNameEditText"
+        style="@style/EditTextStyle"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="@string/last_name"
+        android:maxLength="15"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/selectDateButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameEditText"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/selectDateButton"
+        style="@style/ButtonStyle"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="@string/select_date"
+        app:layout_constraintBottom_toTopOf="@+id/birthDateTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastNameEditText"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/birthDateTextView"
+        style="@style/TextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/birth_date"
+        app:layout_constraintBottom_toTopOf="@+id/maleRadioButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectDateButton"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+    <RadioButton
+        android:id="@+id/maleRadioButton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="@string/male"
+        app:layout_constraintBottom_toTopOf="@+id/saveButton"
+        app:layout_constraintEnd_toStartOf="@+id/femaleRadioButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/birthDateTextView"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <RadioButton
+        android:id="@+id/femaleRadioButton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="@string/female"
+        app:layout_constraintBottom_toTopOf="@+id/saveButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/maleRadioButton"
+        app:layout_constraintTop_toBottomOf="@+id/birthDateTextView"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+    <Button
+        android:id="@+id/saveButton"
+        style="@style/ButtonStyle"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="@string/save"
+        app:layout_constraintBottom_toTopOf="@+id/backToMainButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/femaleRadioButton"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/backToMainButton"
+        style="@style/ButtonStyle"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="@string/back_to_main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saveButton"
+        app:layout_constraintVertical_bias="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

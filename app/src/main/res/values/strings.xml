@@ -13,6 +13,7 @@
     <string name="enter_question">Введіть ваше запитання</string>
     <string name="ask">Запитати</string>
     <string name="back_to_main">Повернутися на головну</string>
+    <string name="back">Повернутися</string>
     <string name="select_date">Обрати дату</string>
 </resources>
 
